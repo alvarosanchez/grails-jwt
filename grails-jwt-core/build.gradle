@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+
+group = "org.grails.plugins"
+version = "0.1-SNAPSHOT"
+description = "Grails JWT plugin - Core"
+
+repositories {
+    jcenter()
+}
+
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.3'
+    compile 'com.nimbusds:nimbus-jose-jwt:3.10'
+
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+// code below this can be safely removed if you don't want publish library ever
