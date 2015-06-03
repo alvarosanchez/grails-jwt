@@ -1,0 +1,11 @@
+<plugin name='grails-jwt-grails2' version='0.1' grailsVersion='2.5 &gt; *'>
+  <author>Your name</author>
+  <title>Grails Jwt Grails2 Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/grails-jwt-grails2</documentation>
+  <type>GrailsJwtGrails2GrailsPlugin</type>
+  <resources>
+    <resource>JwtCodec</resource>
+  </resources>
+</plugin>

@@ -1,3 +1,3 @@
 rootProject.name = 'grails-jwt'
 
-include 'grails-jwt-core', 'grails-jwt-grails3'
+include 'grails-jwt-core', 'grails-jwt-grails2', 'grails-jwt-grails3'

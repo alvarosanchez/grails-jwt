@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:2.1.2"
+    }
+}
+
+version "0.1"
+group "org.grails.plugins"
+
+ext {
+    grailsConfiguredVersion = project.grailsVersion
+    gradleWrapperVersion = project.gradleWrapperVersion
+}
+
+apply plugin: "grails"
+
+repositories {
+    grails.central() //creates a maven repo for the Grails Central repository (Core libraries and plugins)
+}
+
+grails {
+    grailsVersion = grailsConfiguredVersion
+    groovyVersion = '2.4.3'
+    springLoadedVersion '1.2.3.RELEASE'
+}
+
+dependencies {
+    bootstrap "org.grails.plugins:tomcat:7.0.50" // No container is deployed by default, so add this
+
+    compile project(':grails-jwt-core')
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleWrapperVersion
+}

@@ -1,6 +1,10 @@
 .gradle/
 build/
+buildPlugins/
 *.iml
 *.ipr
 *.iws
+.classpath
+.project
 .idea/
+*.zip
