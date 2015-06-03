@@ -1,4 +1,4 @@
-package grails.jwt.grails3
+package grails.plugin.jwt
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

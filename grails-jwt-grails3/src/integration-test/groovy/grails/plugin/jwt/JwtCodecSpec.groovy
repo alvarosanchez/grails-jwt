@@ -1,12 +1,10 @@
-package grails.jwt.grails3
+package grails.plugin.jwt
 
 import com.nimbusds.jwt.SignedJWT
 import grails.test.mixin.integration.Integration
-import grails.transaction.*
 import spock.lang.*
 
 @Integration
-@Rollback
 class JwtCodecSpec extends Specification {
 
     void "it can encode objects"() {

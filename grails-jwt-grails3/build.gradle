@@ -71,3 +71,11 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
 }
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+        events "failed", "standardOut", "standardError"
+        outputs.upToDateWhen { false }
+    }
+}

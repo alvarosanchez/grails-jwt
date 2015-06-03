@@ -8,7 +8,6 @@ repositories {
     jcenter()
 }
 
-
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.3'
     compile 'com.nimbusds:nimbus-jose-jwt:3.10'
@@ -16,8 +15,10 @@ dependencies {
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
+test {
+    testLogging {
+        exceptionFormat = 'full'
+        events "failed", "standardOut", "standardError"
+        outputs.upToDateWhen { false }
+    }
 }
-
-// code below this can be safely removed if you don't want publish library ever

@@ -1,6 +1,5 @@
-package grails.jwt.grails3
+package grails.plugin.jwt
 
-import grails.plugin.jwt.JwtCodecCore
 import grails.plugins.*
 
 class GrailsJwtGrails3GrailsPlugin extends Plugin {
@@ -42,7 +41,7 @@ Brief summary/description of the plugin.
 //    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
 
     void doWithDynamicMethods() {
-        JwtCodecCore.secret = config.grails.plugin.jwt.secret
+        JwtCodec.secret = config.grails.plugin.jwt.secret
     }
 
 }
