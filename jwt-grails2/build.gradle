@@ -30,8 +30,9 @@ grails {
 dependencies {
     bootstrap "org.grails.plugins:tomcat:7.0.50" // No container is deployed by default, so add this
 
-    compile project(':grails-jwt-core')
+    compile project(':jwt-core')
 
+    test 'org.spockframework:spock-grails-support:0.7-groovy-2.0'
 }
 
 task wrapper(type: Wrapper) {

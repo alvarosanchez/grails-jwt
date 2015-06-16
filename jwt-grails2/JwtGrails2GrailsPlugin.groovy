@@ -1,6 +1,6 @@
 import grails.util.Holders
 
-class GrailsJwtGrails2GrailsPlugin {
+class JwtGrails2GrailsPlugin {
     // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
@@ -11,7 +11,7 @@ class GrailsJwtGrails2GrailsPlugin {
     ]
 
     // TODO Fill in these fields
-    def title = "Grails Jwt Grails2 Plugin" // Headline display name of the plugin
+    def title = "JWT Grails2 Plugin" // Headline display name of the plugin
     def author = "Your name"
     def authorEmail = ""
     def description = '''\
@@ -19,7 +19,7 @@ Brief summary/description of the plugin.
 '''
 
     // URL to the plugin's documentation
-    def documentation = "http://grails.org/plugin/grails-jwt-grails2"
+    def documentation = "http://grails.org/plugin/jwt-grails2"
 
     // Extra (optional) plugin metadata
 

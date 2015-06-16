@@ -1,9 +1,7 @@
 package grails.plugin.jwt
 
 import com.nimbusds.jwt.SignedJWT
-import grails.test.mixin.integration.Integration
 import grails.test.spock.IntegrationSpec
-import spock.lang.*
 
 class JwtCodecSpec extends IntegrationSpec {
 
